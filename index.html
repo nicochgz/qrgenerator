@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Generador de códigos QR con JavaScript</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="images/icono-page.ico">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="titulo"></h1>
+            <form action="" id="formulario" class="formulario">
+                <input type="text" id="link" placeholder="Escribe el URL">
+                <button class="btn">Generar QR</button>
+                <!--<a href="QRCode.png" download="QRCode.png" class="btn-descargar">Descargar</a>-->
+            </form>
+            <div id="containerQR" class="containerQR"> </div>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/TextPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/EasePack.min.js"></script>
+        <script src="app.js"></script>
+    </body>    
+</html>
